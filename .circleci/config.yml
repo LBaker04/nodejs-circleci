@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   aws-ecr: circleci/aws-ecr@6.7.0
   node: circleci/node@5.0.2
-  
+
 jobs:
   build_and_test:
     docker:
@@ -29,8 +29,6 @@ jobs:
       - attach_workspace:
       - aws-ecr/build-and-push-image:
           filters:
-          branches:
-            only: master
           account-url: AWS_ECR_ACCOUNT_URL
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
