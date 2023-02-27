@@ -33,6 +33,7 @@ jobs:
   deploy:
     steps:
       - attach_workspace:
+        at: ~/project
       - aws-ecr/build-and-push-image:
           filters:
           account-url: AWS_ECR_ACCOUNT_URL
