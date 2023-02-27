@@ -30,8 +30,6 @@ jobs:
           root: ~/project
           paths:
             - .
-  
-
   deploy:
     steps:
       - attach_workspace:
