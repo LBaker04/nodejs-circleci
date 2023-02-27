@@ -52,4 +52,3 @@ workflows:
     jobs:
       - test
       - build_docker_image
-      - deploy
